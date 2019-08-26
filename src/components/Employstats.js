@@ -58,7 +58,7 @@ class Employestats extends Component {
     render() {
         return (
             <div >
-                <h4 className='left-align'>Employee stats</h4>
+                <h4 className='left-align name'>Employee stats</h4>
                 {this.topEmployess().map(E=><div className="row emp" key={E.employee}> <img alt="" className="circle responsive-img col s1 img" src={E.profileImageUrl}></img> <div className="col s2 name"> {E.employee}.</div><div className="col s1"> {E.numofhours}  hours </div> </div>)}
             </div>
         )
